@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Grand Croatian</string>
+    <string name="welcome_string">Welcome to <b>The Grand Croatian Dictionary</b>. Search through a vast database of words and find definitions in the original language, english translations, declension forms for nouns and adjectives, conjugated forms for verbs, and much more. The free version comes with a sample of all these features, all of which can be unlocked if you get the full version.</string>
+    <string name="language">hr-HR</string>
+    <string name="paySKU">croatian.dictionary.full.version</string>
+    <string name="paySIGNATURE">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAoJpHCnBxAhdAsnkTOzBW0kjFRuQ+ZBswiAY5+U3LhYPJEOwW4fZnSlyGLHx4D8NLQBBxNhpttuoFqOXGG1BGGrCr0uLkNtJjT4kbx6VrIErPlr4S0NPOO55u7E86A0S4Q1bvzIXUq7/yXp0H4rnTyMFnfogPzjglBPLmDh5XUXOLqJ2RA/B3wHxQy6Zk3cHZFFVqmrKUkbcJDfWDjPknh4k11iKZZPAVt0cQMhDBSfNxTjYaW+X3yy63Pq7FPfhPPH2AAFs3qauHIAUzX55t2yu3FNmdPc6d/93UbUIXaktN+PRWeNdixH22QuSYwVQhI7tHi/x9Rjglpvy5DGb/cwIDAQAB</string>
+    <string name="changeLanguageButtonText">Promjena jezika na hrvatski\n(change language to croatian)" </string>
+    <string name="applink">com.subtlebit.fran_.croatiandictionary</string>
+    <string name="config">Grand.Croatian.Dict.Settings</string>
+</resources>

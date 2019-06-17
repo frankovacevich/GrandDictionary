@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Grand German</string>
+    <string name="welcome_string">Welcome to <b>The Grand German Dictionary</b>. Search through a vast database of words and find definitions in the original language, english translations, declension forms for nouns and adjectives, conjugated forms for verbs, and much more. The free version comes with a sample of all these features, all of which can be unlocked if you get the full version.</string>
+    <string name="language">de-DE</string>
+    <string name="paySKU">german.dictionary.full.version</string>
+    <string name="paySIGNATURE">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnmZTPuq9LazRY1t+E8lAA7R9VLtYizD3FXHSgk0iVXH2VL09CaLJgUNBTRGEj92RIlgrheV6aAm/47y0GowTKOm41/oXkDD++OGvUnjdBIk+9896Y6PVMONvvEhpN9hS7BgRMtVRRlfedcffSfNnCNdOXx35yiNh7I9G/ZMhioOfqPKuQIYiBoegZOBcZMRIcjrb6V4AM8PcfaMX29hjvesaw2XR5XKp8TdlZFYPcEca+hvMBMcIy0c7796KJXln4DnRjc6e8HDPgw/7UmfVirigJFAKc/jqs5F29BjAVQievNunUe0XvqCv3kA2IxdQXNN8kY6HeOsBRZM/naKCOwIDAQAB</string>
+    <string name="changeLanguageButtonText">Sprache ändern in Deutsch\n(change language to German)</string>
+    <string name="applink">com.subtlebit.fran_.croatiandictionary.de</string>
+    <string name="config">Grand.German.Dict.Settings</string>
+</resources>

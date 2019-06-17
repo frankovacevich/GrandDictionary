@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/settings_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OPTIONS"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"/>
+
+        <CheckBox
+            android:id="@+id/EnableDarkBodeCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ChangeColorMode"
+            android:layout_marginBottom="0dp"
+            android:text="Set dark mode" />
+
+        <CheckBox
+            android:id="@+id/EnableNotificationsCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="SetNotifications"
+            android:layout_marginBottom="0dp"
+            android:text="Send me the word of the day as a notification everyday (at 11am)" />
+
+        <CheckBox
+            android:layout_marginTop="0dp"
+            android:id="@+id/EnableOriginalLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ChangeLanguage"
+            android:layout_marginBottom="20dp"
+            android:text="@string/changeLanguageButtonText"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/welomeTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/welcome_string"
+                    android:textAlignment="center"
+                    android:textColor="#808080"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="10dp" />
+
+                <Button
+                    android:id="@+id/GetFullVersionButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:gravity="center"
+                    android:onClick="ClickOnPayButton"
+                    android:layout_margin="-10dp"
+                    android:text="GET FULL VERSION"
+                    android:textColor="#FFFFFF" />
+                <!--<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:id="@+id/priceTagTextView"
+                android:textSize="10dp"
+                android:textColor="#808080"
+                android:visibility="gone"/>-->
+                <Button
+                    android:id="@+id/RateAppButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:onClick="ClickOnRateAppButton"
+                    android:text="RATE THE APP"
+                    android:textColor="#FFFFFF" />
+                <Button
+                    android:id="@+id/SendFeedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+
+                    android:backgroundTint="@color/colorPrimary"
+
+                    android:onClick="SendFeedbackButtonClick"
+                    android:text="SEND FEEDBACK"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

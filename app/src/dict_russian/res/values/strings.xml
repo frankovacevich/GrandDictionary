@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Grand Russian</string>
+    <string name="welcome_string">Welcome to <b>The Grand Russian Dictionary</b>. Search through a vast database of words and find definitions in the original language, english translations, declension forms for nouns and adjectives, conjugated forms for verbs, and much more. The free version comes with a sample of all these features, all of which can be unlocked if you get the full version.</string>
+    <string name="language">ru-RU</string>
+    <string name="paySKU">russian.dictionary.full.version</string>
+    <string name="paySIGNATURE">MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnoA50mu9GKXOLXkh0RWCde879sFgZIdLIzOxHbIWWmaPzE1pOTdS/ice3sWeK10MJ99M/b6qHxtxJHwrX/lfPxrf3syY3YNrYaZ28XFZvy8r53rkIb83rgNzpq3bN8eHsChKexhW9N90fUw/MxR6SWPcvEiynG5wa4ORNt4iSgaeh2zxalIM03lhyEgU20e53Fpa9Gf/wTCj1f+iAVRVYwNM8wo16jJ+9LLUyvkQX0BM5lWGse/Kmk29pypmIeP7crkO5acPFYuX7lhcnmkuFNmNfGq75XTj5F0crRGlapd26yDcu1MaKmDU7+IPSU9jcVqGhorBTwuhoK1L03ZrFQIDAQAB</string>
+    <string name="changeLanguageButtonText">Смене языка на русский\n(change language to Russian)</string>
+    <string name="applink">com.subtlebit.fran_.croatiandictionary.ru</string>
+    <string name="config">Grand.Russian.Dict.Settings</string>
+</resources>

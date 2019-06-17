@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body{
+	margin-left: 10px;
+	margin-right: 10px;
+	font-family: "Arial";
+	font-size: 15px;
+	word-break: break-word;
+	color: #000000;
+	background-color: #fafafa;
+}
+
+.main-wrd{
+	margin-top: 20px;
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+.sub-wrd{
+	font-size: 14px;
+	color: #818181;
+	margin-bottom: 25px;
+}
+
+.tabl-wrd{
+	margin-top: 40px;
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+
+.roundy-bx{
+	border-radius: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #cccccc;
+	width: 100% - 40px;
+	height: auto;
+	box-shadow: 0px 2px #cccccc;
+	margin-bottom: 25px;
+	
+}
+
+.roundy-bx-title{
+	border-top-right-radius: 4px;
+	border-top-left-radius: 4px;
+	background-color: #cccccc;
+	width: 100% - 5px;
+	height: 15px;
+	padding: 5px;
+}
+
+.choose-bx-title{
+	height: 35px;
+	padding: 0px;
+	table-layout: fixed;
+	margin-bottom: 3px;
+}
+
+.choose-btn{
+	border-bottom: 3px solid #cccccc;
+}
+
+.choose-btn-selected{
+	border-bottom: 3px solid replace_main_color;
+}
+
+p{
+	padding = 0;
+	margin-top = 0;
+	margin-bottom = 0;
+	margin-left: 5px;
+}
+
+a{
+	font-size: 11px;
+	color: #000000;
+}
+
+a:link{
+	word-break: break-all;
+}
+
+table{
+	width: 100%;
+	font-style: normal;
+
+}
+
+th,td{
+
+	border-style: none;
+
+}
+
+.play-button{
+	font-size: 30px;
+	float: right;
+	margin-top: 30px;
+	margin-right: 20px;
+	height: 30px;
+	width: 30px;
+}
+
+.play-button-img{
+	content:url("file:///android_asset/sound_icon_cccccc.png");
+	max-height:100%;
+	max-width:100%;
+}
+
+.star-button-img{
+	content:url("file:///android_asset/star_icon_cccccc.png");
+	max-height:100%;
+	max-width:100%;
+}
+
+.unstar-button-img{
+	content:url("file:///android_asset/unstar_icon_cccccc.png");
+	max-height:100%;
+	max-width:100%;
+}
+
+.buy-full-version-button{
+	border-radius: 3px;
+	background-color: replace_main_color;
+	box-shadow: 0px 2px replace_secondary_color;
+	height: 30px;
+	width: 100% - 10px;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+	margin: 5px;
+}
+
+
+
+</style>
+</head>
+
+<body>
+		replace_bod
+</body>
+<script>
+	function playClick(){
+		Android.playButtonClick(document.getElementById("word_name").innerHTML);
+	}
+
+	function buyClick(){
+		Android.buyButtonClick();
+	}
+
+	function starClick(){
+		Android.starButtonClick();
+		if (document.getElementById("starbtn").classList.contains('unstar-button-img')) {
+			document.getElementById("starbtn").classList.add('star-button-img');
+			document.getElementById("starbtn").classList.remove('unstar-button-img');
+		} else {
+			document.getElementById("starbtn").classList.remove('star-button-img');
+			document.getElementById("starbtn").classList.add('unstar-button-img');
+		}
+	}
+
+	function tabBtnClick(tableName,rowName,rowCount){
+
+		for(i=1;i<=rowCount;i++){
+            if(document.getElementById("tb-" + tableName.toString() + "-r-" + i.toString())!==null)
+	            document.getElementById("tb-" + tableName.toString() + "-r-" + i.toString()).style.display = "none";
+		    if(document.getElementById("btn-tb-" + tableName.toString() + "-r-" + i.toString())!==null)
+			    document.getElementById("btn-tb-" + tableName.toString() + "-r-" + i.toString()).style.display = "none";
+			document.getElementById("bn-" + tableName.toString() + "-r-" + i.toString()).classList.remove("choose-btn-selected")
+			document.getElementById("bn-" + tableName.toString() + "-r-" + i.toString()).classList.add("choose-btn")
+		}
+
+		if(document.getElementById("tb-" + tableName.toString() + "-r-" + rowName.toString())!==null)
+		    document.getElementById("tb-" + tableName.toString() + "-r-" + rowName.toString()).style.display = "inline-table";
+
+		if(document.getElementById("btn-tb-" + tableName.toString() + "-r-" + rowName.toString())!==null)
+		    document.getElementById("btn-tb-" + tableName.toString() + "-r-" + rowName.toString()).style.display = "block";
+
+		document.getElementById("bn-" + tableName.toString() + "-r-" + rowName.toString()).classList.add("choose-btn-selected");
+	}
+</script>
+</html>

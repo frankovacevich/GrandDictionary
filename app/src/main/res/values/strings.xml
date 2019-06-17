@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Grand Dictionary</string>
+    <string name="welcome_string"></string>
+    <string name="language"></string>
+    <string name="paySKU"></string>
+    <string name="paySIGNATURE"></string>
+    <string name="changeLanguageButtonText"></string>
+    <string name="applink"></string>
+    <string name="config"></string>
+</resources>
